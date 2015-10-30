@@ -49,7 +49,7 @@ describe('node-each', function() {
         });
 
         it('should throw when given no arguments', function () {
-            expect(nodeEach.each).to.throw('async-each first argument must be the collection array for iteration');
+            expect(nodeEach.each).to.throw('each first argument must be the collection array for iteration');
         });
 
         it('should have first argument of array type', function() {
@@ -61,7 +61,7 @@ describe('node-each', function() {
                 nodeEach.each(emptyArray, emptyCallback);
             }
 
-            expect(invalidParameterTest).to.throw('async-each first argument must be the collection array for iteration');
+            expect(invalidParameterTest).to.throw('each first argument must be the collection array for iteration');
             expect(validParameterTest).not.to.throw();
         });
 
@@ -74,7 +74,7 @@ describe('node-each', function() {
                 nodeEach.each(emptyArray, emptyCallback);
             }
 
-            expect(invalidParameterTest).to.throw('async-each second argument must be the iteration callback function');
+            expect(invalidParameterTest).to.throw('each second argument must be the iteration callback function');
             expect(validParameterTest).not.to.throw();
         });
 
@@ -87,7 +87,7 @@ describe('node-each', function() {
                 nodeEach.each(emptyArray, emptyCallback, {});
             }
 
-            expect(invalidParameterTest).to.throw('async-each third argument must be the options object');
+            expect(invalidParameterTest).to.throw('each third argument must be the options object');
             expect(validParameterTest).not.to.throw();
         });
 
