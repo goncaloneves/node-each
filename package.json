@@ -2,6 +2,7 @@
   "name": "node-each",
   "description": "Node asynchronous for each that avoids blocking Node Event Loop",
   "main": "lib/index.js",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/goncaloneves/node-each"
